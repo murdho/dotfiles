@@ -84,9 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -r ~/.aliasrc ] && . ~/.aliasrc
 
-# rbenv initialization
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # default editor
 export EDITOR=vim
 
@@ -107,4 +104,5 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 # choose default ruby
 chruby 2.3.0
 
+# cooler backwards search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
