@@ -1,0 +1,40 @@
+# Meta
+alias ealias='vim ~/.aliasrc'
+alias ralias='. ~/.aliasrc'
+
+# Projects
+alias dev='~/Developer'
+setopt auto_cd
+cdpath+=~/Developer
+
+# Ruby
+alias serve_dir='ruby -run -ehttpd . -p8000'
+
+# Rails
+alias rdo='rake db:migrate:redo'
+alias rcs='rails console -s'
+alias rdu='rake db:dumbify'
+
+# Git
+alias gds='git diff --staged'
+alias gpf='ggpush --force-with-lease'
+
+# Ruby
+alias rtags='ctags -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems . $(bundle list --paths)'
+
+# GPG
+alias encrypt='gpg --armor --symmetric --cipher-algo AES256'
+
+# DNS cache
+alias cleardnscache='dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+
+# Vim
+alias vimrc='vim ~/.vimrc'
+
+# System
+mkcd () {
+  mkdir -p "$*"
+  cd "$*"
+}
+
+alias htop='sudo htop'
