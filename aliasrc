@@ -14,6 +14,7 @@ alias serve_dir='ruby -run -ehttpd . -p8000'
 alias rdo='rake db:migrate:redo'
 alias rcs='rails console -s'
 alias rdu='rake db:dumbify'
+alias rdmu='rake db:migrate; rake db:dumbify'
 
 # Git
 alias gds='git diff --staged'

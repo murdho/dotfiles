@@ -14,7 +14,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-haml'
@@ -31,6 +30,7 @@ Plugin 'vim-scripts/tComment'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-fugitive'
 Plugin 'shime/vim-livedown'
+Plugin 'ervandew/supertab'
 " Plugin 'jiangmiao/auto-pairs'
 " Plugin 'freitass/todo.txt-vim'
 
@@ -259,3 +259,6 @@ augroup myvimrc
     au!
     au BufWritePost .vimrc nested so $MYVIMRC
 augroup END
+
+" show relative line numbers
+" set relativenumber " it's slow :(
