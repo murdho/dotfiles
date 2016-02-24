@@ -31,8 +31,15 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-fugitive'
 Plugin 'shime/vim-livedown'
 Plugin 'ervandew/supertab'
-" Plugin 'jiangmiao/auto-pairs'
-" Plugin 'freitass/todo.txt-vim'
+Plugin 'freitass/todo.txt-vim'
+
+" Clojure plugins
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'guns/vim-clojure-static'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-salve'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -262,3 +269,9 @@ augroup END
 
 " show relative line numbers
 " set relativenumber " it's slow :(
+
+" (Clojure) enable rainbow parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
