@@ -106,3 +106,6 @@ chruby 2.3.0
 
 # cooler backwards search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# todo information on startup
+[ -f ~/.todo/todo-startup.sh ] && source ~/.todo/todo-startup.sh
