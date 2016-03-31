@@ -9,19 +9,30 @@ cdpath+=~/Developer
 
 # Ruby
 alias serve_dir='ruby -run -ehttpd . -p8000'
+alias rtags='ctags -R --languages=ruby --exclude=.git --exclude=log'
+alias rtags-gems='ctags -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems . $(bundle list --paths)'
 
 # Rails
 alias rdo='rake db:migrate:redo'
 alias rcs='rails console -s'
 alias rdu='rake db:dumbify'
 alias rdmu='rake db:migrate; rake db:dumbify'
+alias bess='bundle exec spring stop'
+
+# Bundler
+alias be='bundle exec'
 
 # Git
 alias gds='git diff --staged'
 alias gpf='ggpush --force-with-lease'
 
-# Ruby
-alias rtags='ctags -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems . $(bundle list --paths)'
+# Git Flow
+alias gff='git flow feature'
+alias gffs='gff start'
+alias gfff='gff finish'
+alias gfh='git flow hotfix'
+alias gfhs='gfh start'
+alias gfhf='gfh finish -n'
 
 # GPG
 alias encrypt='gpg --armor --symmetric --cipher-algo AES256'

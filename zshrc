@@ -49,7 +49,7 @@ ZSH_THEME="fishy-murdho"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git github ssh-agent rails)
+plugins=(git github git-flow ssh-agent rails)
 
 # User configuration
 

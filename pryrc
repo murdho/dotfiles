@@ -19,3 +19,15 @@ def dt(&block)
   require 'benchmark'
   Benchmark.measure(&block)
 end
+
+if defined?(Rails)
+  class ActiveRecord::Associations::CollectionProxy
+    def o_id
+      order(:id)
+    end
+  end
+end
+
+def transaction(*args, &block)
+  ActiveRecord::Base.transaction(*args, &block)
+end

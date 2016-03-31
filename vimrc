@@ -104,7 +104,7 @@ set nu
 set colorcolumn=80
 
 " disable word wrap
-set nowrap
+" set nowrap
 
 " tree style to netrw
 let g:netrw_liststyle=3
@@ -119,6 +119,10 @@ nnoremap ; :
 " ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_max_files = 0
+
+" set wildignore stuff, mainly for ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " clipboard
 set clipboard=unnamed
