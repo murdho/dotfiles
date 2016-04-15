@@ -3,9 +3,12 @@
 # Please adapt and uncomment the following lines:
 name = Murdho
 email = murdho@murdho.com
+	signingkey = murdho@murdho.com
 [core]
 	excludesfile = /Users/murdho/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[commit]
+	gpgsign = true

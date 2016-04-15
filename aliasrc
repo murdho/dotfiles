@@ -25,9 +25,6 @@ alias be='bundle exec'
 # Git
 alias gds='git diff --staged'
 alias gpf='ggpush --force-with-lease'
-alias gc='git commit -S'
-alias grb='git rebase --gpg-sign=murdho@murdho.com'
-alias grbi='git rebase -i --gpg-sign=murdho@murdho.com'
 
 # Git Flow
 alias gff='git flow feature'
