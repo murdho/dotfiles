@@ -32,6 +32,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'shime/vim-livedown'
 Plugin 'ervandew/supertab'
 Plugin 'freitass/todo.txt-vim'
+Plugin 'junegunn/limelight.vim'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'mhinz/vim-startify'
 
 " Clojure plugins
 Plugin 'guns/vim-sexp'
@@ -120,6 +123,10 @@ nnoremap ; :
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_max_files = 0
+let g:ctrlp_reuse_window  = 'startify'
+
+" ctrlp-funky
+nnoremap <Leader>f :CtrlPFunky<Cr>
 
 " set wildignore stuff, mainly for ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip

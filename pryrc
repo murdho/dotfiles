@@ -20,7 +20,7 @@ def dt(&block)
   Benchmark.measure(&block)
 end
 
-if defined?(Rails)
+if defined?(ActiveRecord)
   class ActiveRecord::Associations::CollectionProxy
     def o_id
       order(:id)
