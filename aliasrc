@@ -50,7 +50,3 @@ mkcd () {
 }
 
 alias htop='sudo htop'
-
-# todo.txt-cli
-export TODOTXT_DEFAULT_ACTION=ls
-alias t='todo.sh'
