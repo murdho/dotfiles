@@ -34,6 +34,7 @@ Plugin 'ervandew/supertab'
 Plugin 'junegunn/limelight.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'mhinz/vim-startify'
+Plugin 'ivalkeen/vim-simpledb'
 
 " Clojure plugins
 Plugin 'guns/vim-sexp'
@@ -71,7 +72,8 @@ imap <left> <nop>
 imap <right> <nop>
 
 " for vim.rails rails commands
-set shell=sh
+" set shell=sh
+set shell=zsh " overriding to get vim-simpledb work properly
 
 " for ruler
 set ruler
@@ -285,3 +287,21 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" vim-startify
+let g:startify_list_order = [
+  \ ['   MRU '. getcwd()], 'dir',
+  \ ['   MRU'],            'files',
+  \ ['   Sessions'],       'sessions',
+  \ ['   Bookmarks'],      'bookmarks',
+  \ ]
+let g:startify_files_number = 15
+
+" vim-simpledb
+let g:simpledb_show_timing = 0
+
+" remove whitespace from psql result file
+autocmd BufNewFile,BufRead,FileType *.txt :StripWhitespace
+
+" disable word-wrap for txt files for better psql output (vim-simpledb)
+autocmd BufNewFile,BufRead,FileType *.txt set nowrap

@@ -93,7 +93,7 @@ bindkey '^r' history-incremental-search-backward
 export KEYTIMEOUT=1
 
 # postgres.app command line stuff
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin/"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
