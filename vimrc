@@ -54,10 +54,6 @@ filetype plugin indent on    " required
 set background=dark
 colorscheme base16-paraiso
 
-" transparent background
-" highlight Normal ctermbg=none
-" highlight NonText ctermbg=none
-
 " syntax highlighting
 syntax on
 
@@ -305,3 +301,7 @@ autocmd BufNewFile,BufRead,FileType *.txt :StripWhitespace
 
 " disable word-wrap for txt files for better psql output (vim-simpledb)
 autocmd BufNewFile,BufRead,FileType *.txt set nowrap
+
+" transparent background
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
