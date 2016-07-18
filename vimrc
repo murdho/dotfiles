@@ -35,6 +35,8 @@ Plugin 'junegunn/limelight.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'mhinz/vim-startify'
 Plugin 'ivalkeen/vim-simpledb'
+" Plugin 'scrooloose/nerdtree'
+Plugin 'wesQ3/vim-windowswap'
 
 " Clojure plugins
 Plugin 'guns/vim-sexp'
@@ -126,7 +128,7 @@ let g:ctrlp_reuse_window  = 'startify'
 nnoremap <Leader>f :CtrlPFunky<Cr>
 
 " set wildignore stuff, mainly for ctrlp.vim
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*
 
 " clipboard
 set clipboard=unnamed
@@ -305,3 +307,18 @@ autocmd BufNewFile,BufRead,FileType *.txt set nowrap
 " transparent background
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
+
+" NERDtree
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" let g:NERDTreeWinPos = "right"
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" code folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
+" highlight current line
+set cursorline

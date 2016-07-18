@@ -4,3 +4,4 @@ tags
 *.swp
 .lein-repl-history
 .nrepl-port
+.DS_Store
