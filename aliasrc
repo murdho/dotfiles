@@ -11,6 +11,7 @@ cdpath+=~/Developer
 alias serve_dir='ruby -run -ehttpd . -p8000'
 alias rtags='ctags -R --languages=ruby --exclude=.git --exclude=log'
 alias rtags-gems='ctags -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems . $(bundle list --paths)'
+alias prettyjson='ruby -r json -r ap -e "ap JSON.parse(ARGF.read)"'
 
 # Rails
 alias rdo='rake db:migrate:redo'
@@ -50,3 +51,13 @@ mkcd () {
 }
 
 alias htop='sudo htop'
+alias sdel='srm -v'
+alias sdelr='srm -rv'
+
+# Vagrant
+alias v='vagrant'
+alias vu='vagrant up'
+alias vs='vagrant ssh'
+alias vr='vagrant reload'
+alias vh='vagrant halt'
+alias vd='vagrant destroy'

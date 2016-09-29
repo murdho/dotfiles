@@ -30,7 +30,7 @@ ZSH_THEME="fishy-murdho"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -49,7 +49,7 @@ ZSH_THEME="fishy-murdho"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git github git-flow ssh-agent rails)
+plugins=(git github git-flow ssh-agent rails vagrant)
 
 # User configuration
 
@@ -84,6 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -r ~/.aliasrc ] && . ~/.aliasrc
 
+# Load ~/.profile
+[ -r ~/.profile ] && . ~/.profile
+
 # default editor
 export EDITOR=vim
 
@@ -106,3 +109,9 @@ chruby 2.3.0
 
 # cooler backwards search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# for some coverage thingies
+export COVERAGE=true
+
+# awscli autocomplete
+source /usr/local/share/zsh/site-functions/_aws

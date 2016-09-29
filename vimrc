@@ -37,14 +37,22 @@ Plugin 'mhinz/vim-startify'
 Plugin 'ivalkeen/vim-simpledb'
 " Plugin 'scrooloose/nerdtree'
 Plugin 'wesQ3/vim-windowswap'
+Plugin 'junegunn/vim-easy-align'
+
+" Snippet stuff
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+" Plugin 'honza/vim-snippets'
 
 " Clojure plugins
-Plugin 'guns/vim-sexp'
-Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+" Plugin 'guns/vim-sexp'
+" Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 Plugin 'guns/vim-clojure-static'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-salve'
+Plugin 'venantius/vim-cljfmt'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -128,7 +136,7 @@ let g:ctrlp_reuse_window  = 'startify'
 nnoremap <Leader>f :CtrlPFunky<Cr>
 
 " set wildignore stuff, mainly for ctrlp.vim
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*,*/coverage/*
 
 " clipboard
 set clipboard=unnamed
@@ -293,7 +301,7 @@ let g:startify_list_order = [
   \ ['   Sessions'],       'sessions',
   \ ['   Bookmarks'],      'bookmarks',
   \ ]
-let g:startify_files_number = 15
+let g:startify_files_number = 5
 
 " vim-simpledb
 let g:simpledb_show_timing = 0
@@ -321,4 +329,14 @@ set nofoldenable
 set foldlevel=1
 
 " highlight current line
-set cursorline
+" set cursorline
+
+" Supertab / Autocomplete
+inoremap <Tab> <C-P>
+
+" EasyAlign
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
