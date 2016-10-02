@@ -5,3 +5,5 @@ tags
 .lein-repl-history
 .nrepl-port
 .DS_Store
+.idea
+*.iml
