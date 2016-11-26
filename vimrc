@@ -60,8 +60,8 @@ filetype plugin indent on    " required
 " --- my stuff ---
 
 " nice colors
-set background=dark
-colorscheme base16-paraiso
+set background=light
+colorscheme base16-tomorrow
 
 " syntax highlighting
 syntax on
@@ -339,3 +339,6 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" Keep cursor x lines away from the top/bottom
+set so=10

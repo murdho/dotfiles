@@ -50,6 +50,16 @@ if defined?(ActiveRecord)
       order(:id)
     end
   end
+
+  class ActiveRecord::Base
+    def self.[](id_or_hash)
+      if id_or_hash.is_a?(Hash)
+        find_by(id_or_hash)
+      else
+        find(id_or_hash)
+      end
+    end
+  end
 end
 
 def transaction(*args, &block)
