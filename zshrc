@@ -98,15 +98,6 @@ export KEYTIMEOUT=1
 # postgres.app command line stuff
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
-# chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-
-# enable auto-switching rubies (.ruby-version)
-source /usr/local/opt/chruby/share/chruby/auto.sh
-
-# choose default ruby
-chruby 2.3.0
-
 # cooler backwards search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -115,3 +106,10 @@ export COVERAGE=true
 
 # awscli autocomplete
 source /usr/local/share/zsh/site-functions/_aws
+
+# rbenv
+eval "$(rbenv init -)"
+
+# for docker
+SKEY="$(< ~/.ssh/id_rsa)"
+export SKEY
