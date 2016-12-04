@@ -104,12 +104,10 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 # for some coverage thingies
 export COVERAGE=true
 
-# awscli autocomplete
-source /usr/local/share/zsh/site-functions/_aws
-
 # rbenv
 eval "$(rbenv init -)"
 
-# for docker
-SKEY="$(< ~/.ssh/id_rsa)"
-export SKEY
+# awscli autocomplete
+if hash "awscli" &> /dev/null; then
+  source /usr/local/share/zsh/site-functions/_aws
+fi

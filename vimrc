@@ -32,7 +32,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'shime/vim-livedown'
 Plugin 'ervandew/supertab'
 Plugin 'junegunn/limelight.vim'
-Plugin 'junegunn/goyo.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'mhinz/vim-startify'
 Plugin 'ivalkeen/vim-simpledb'
@@ -342,3 +341,8 @@ nmap ga <Plug>(EasyAlign)
 
 " Keep cursor x lines away from the top/bottom
 set so=10
+
+" limelight
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
