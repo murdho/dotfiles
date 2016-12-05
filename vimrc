@@ -25,7 +25,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'danchoi/ri.vim'
 Plugin 'skalnik/vim-vroom'
-Plugin 'chriskempson/base16-vim'
+" Plugin 'chriskempson/base16-vim'
 Plugin 'vim-scripts/tComment'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-fugitive'
@@ -59,8 +59,8 @@ filetype plugin indent on    " required
 " --- my stuff ---
 
 " nice colors
-set background=light
-colorscheme base16-tomorrow
+" set background=dark
+" colorscheme base16-tomorrow
 
 " syntax highlighting
 syntax on
