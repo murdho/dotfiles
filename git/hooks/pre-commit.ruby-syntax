@@ -2,5 +2,7 @@
 
 AFFECTED_FILES=$(git diff --cached --name-only | ag '\.rb$')
 
-echo 'Checking syntax...'
-ruby -c $AFFECTED_FILES
+if [[ -n $AFFECTED_FILES ]]; then
+  echo 'Syntax check for .rb files...'
+  ruby -c $AFFECTED_FILES
+fi
