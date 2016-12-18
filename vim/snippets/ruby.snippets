@@ -5,3 +5,9 @@ snippet Org
 	Organization.for(${1}) do
 		${2}
 	end
+
+snippet arlog
+	ActiveRecord::Base.logger = Logger.new($stdout)
+
+snippet log
+	Logger.new($stdout)

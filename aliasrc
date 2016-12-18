@@ -44,6 +44,7 @@ alias cleardnscache='dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 # Vim
 alias vimrc='vim ~/.vimrc'
+alias vimsnip='vim ~/.vim/snippets'
 
 # System
 mkcd () {
