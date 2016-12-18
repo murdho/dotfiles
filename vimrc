@@ -77,7 +77,8 @@ imap <right> <nop>
 
 " for vim.rails rails commands
 " set shell=sh
-set shell=zsh " overriding to get vim-simpledb work properly
+" set shell=zsh " overriding to get vim-simpledb work properly
+set shell=$HOME/.vim/shell-wrapper.sh
 
 " for ruler
 set ruler
@@ -346,3 +347,9 @@ set so=10
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
+
+" disable Ex mode shortcut
+nnoremap Q <Nop>
+
+" remap command history shortcut
+nnoremap q: :
