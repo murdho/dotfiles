@@ -1126,6 +1126,8 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>Default Arrangement Name</key>
+	<string>One Window Centered</string>
 	<key>Default Bookmark Guid</key>
 	<string>8CBFF0D4-EB93-4986-8120-9ADFA1490110</string>
 	<key>DimBackgroundWindows</key>
@@ -1259,6 +1261,10 @@
 	<true/>
 	<key>HideTabNumber</key>
 	<true/>
+	<key>HotKeyBookmark</key>
+	<string>8CBFF0D4-EB93-4986-8120-9ADFA1490110</string>
+	<key>HotKeyTogglesWindow</key>
+	<false/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
@@ -1313,10 +1319,12 @@
 	</dict>
 	<key>NSWindow Frame Preferences</key>
 	<string>269 139 606 456 0 0 1280 800 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>370 271 700 540 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>484 118 796 473 0 0 1280 800 </string>
+	<string>1197 836 937 464 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 9 1279 787 0 0 1280 800 </string>
+	<string>343 186 1180 1072 0 0 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_8CBFF0D4-EB93-4986-8120-9ADFA1490110</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_8CBFF0D4-EB93-4986-8120-9ADFA1490110_selection</key>
@@ -1531,8 +1539,6 @@
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<true/>
-			<key>Background Image Location</key>
-			<string>/Users/murdho/.dotfiles/img/old_mathematics_@2X.png</string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2038,14 +2044,22 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>D6B220D1-8AA3-48AB-A454-18088FD26BBF</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>502026389.458969</real>
 	<key>OpenArrangementAtStartup</key>
-	<false/>
+	<true/>
 	<key>OpenBookmark</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
-	<true/>
+	<false/>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PasteTabToStringTabStopSize</key>
 	<integer>2</integer>
 	<key>PointerActions</key>
@@ -2096,15 +2110,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-29T13:37:41Z</date>
+	<date>2017-01-30T13:44:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.38347355769230773</real>
+	<real>0.17239082532051281</real>
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>TabViewType</key>
@@ -2113,6 +2127,8 @@
 	<false/>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
+	<key>Window Arrangements</key>
+	<dict/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
@@ -2120,7 +2136,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.12</string>
+	<string>3.0.13</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>

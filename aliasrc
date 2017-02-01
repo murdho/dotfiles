@@ -19,10 +19,14 @@ alias rdmd='rake db:migrate:down'
 alias rcs='rails console -s'
 alias rdu='rake db:dumbify'
 alias rdmu='rake db:migrate; rake db:dumbify'
+alias rdds='rake db:drop db:setup'
+alias rds='rake db:setup'
 alias bess='bundle exec spring stop'
 
 # Bundler
 alias be='bundle exec'
+alias berc='bundle exec rubocop'
+alias bers='bundle exec rspec'
 
 # Git
 alias gds='git diff --staged'
@@ -45,6 +49,7 @@ alias cleardnscache='dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 # Vim
 alias vimrc='vim ~/.vimrc'
 alias vimsnip='vim ~/.vim/snippets'
+alias vimplugininstall='vim +PluginInstall +qall'
 
 # System
 mkcd () {

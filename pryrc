@@ -10,6 +10,7 @@ def r
 end
 
 def execute(sql)
+  warn 'NOTICE: Running #execute method defined in ~/.pryrc'
   ActiveRecord::Base.connection.execute(sql)
 end
 

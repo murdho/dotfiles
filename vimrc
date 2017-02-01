@@ -37,6 +37,7 @@ Plugin 'mhinz/vim-startify'
 Plugin 'ivalkeen/vim-simpledb'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'jpalardy/vim-slime'
 
 " Snippet stuff
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -133,6 +134,7 @@ let g:ctrlp_reuse_window  = 'startify'
 
 " ctrlp-funky
 nnoremap <Leader>f :CtrlPFunky<Cr>
+nnoremap <Leader>b :CtrlPBuffer<Cr>
 
 " set wildignore stuff, mainly for ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*,*/coverage/*
@@ -353,3 +355,8 @@ nnoremap Q <Nop>
 
 " remap command history shortcut
 nnoremap q: :
+
+" vim-slime
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": ":"}
+let g:slime_dont_ask_default = 1

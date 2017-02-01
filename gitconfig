@@ -12,3 +12,7 @@ email = murdho@murdho.com
 	required = true
 [commit]
 	gpgsign = true
+[diff]
+	tool = opendiff
+[difftool]
+	prompt = false
