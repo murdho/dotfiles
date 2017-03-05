@@ -38,20 +38,12 @@ Plugin 'ivalkeen/vim-simpledb'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'jpalardy/vim-slime'
+Plugin 'keith/swift.vim'
 
 " Snippet stuff
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-
-" Clojure plugins
-" Plugin 'guns/vim-sexp'
-" Plugin 'tpope/vim-sexp-mappings-for-regular-people'
-Plugin 'guns/vim-clojure-static'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'tpope/vim-fireplace'
-Plugin 'tpope/vim-salve'
-Plugin 'venantius/vim-cljfmt'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -288,12 +280,6 @@ augroup END
 
 " show relative line numbers
 " set relativenumber " it's slow :(
-
-" (Clojure) enable rainbow parentheses
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
 
 " vim-startify
 let g:startify_list_order = [
