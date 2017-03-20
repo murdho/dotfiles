@@ -38,6 +38,7 @@ Plugin 'ivalkeen/vim-simpledb'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'jpalardy/vim-slime'
+Plugin 'tpope/vim-abolish'
 
 " Snippet stuff
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -150,6 +151,9 @@ let NERDSpaceDelims=1
 
 " insert binding.pry on the line above
 map <leader>rbp Orequire "pry"; binding.pry<Esc>
+
+" insert ap on the line above
+map <leader>rap Orequire "ap"; ap
 
 " enable lightline
 set laststatus=2
@@ -360,3 +364,13 @@ nnoremap q: :
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": ":"}
 let g:slime_dont_ask_default = 1
+
+" ===== Seeing Is Believing =====
+" Annotate every line
+  nmap <leader>e :%!seeing_is_believing --timeout 12 --line-length 500 --number-of-captures 300 --alignment-strategy chunk<CR>
+" Remove annotations
+  nmap <leader>c :%.!seeing_is_believing --clean<CR>
+" Mark the current line for annotation
+  nmap <leader>m A # => <Esc>
+" Mark the highlighted lines for annotation
+  vmap <leader>m :norm A # => <Esc>

@@ -66,3 +66,31 @@ end
 def transaction(*args, &block)
   ActiveRecord::Base.transaction(*args, &block)
 end
+
+class SpyObject
+  attr_accessor :identifier
+  attr_accessor :verbose
+
+  def initialize(identifier: default_identifier, verbose: true)
+    self.identifier = identifier
+    self.verbose    = verbose
+  end
+
+  def class
+    SpyObject.new(identifier: "#{identifier} (class)", verbose: verbose)
+  end
+
+  def default_identifier
+    (rand * 1_000).to_i
+  end
+
+  def method_missing(method, *args)
+    name = "Spy '#{identifier}'".strip
+    puts "#{name} method=#{method}; args=#{args.inspect}; block=#{block_given?}"
+    self
+  end
+end
+
+def spy_object(*args)
+  SpyObject.new(*args)
+end

@@ -102,7 +102,7 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # for some coverage thingies
-export COVERAGE=true
+# export COVERAGE=true
 
 # rbenv
 eval "$(rbenv init -)"
@@ -111,3 +111,5 @@ eval "$(rbenv init -)"
 if hash "awscli" &> /dev/null; then
   source /usr/local/share/zsh/site-functions/_aws
 fi
+
+export PATH="$PATH:/usr/local/go/bin"
