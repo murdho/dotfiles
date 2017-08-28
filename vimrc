@@ -39,12 +39,17 @@ Plugin 'wesQ3/vim-windowswap'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'jpalardy/vim-slime'
 Plugin 'tpope/vim-abolish'
-Plugin 'keith/swift.vim'
+" Plugin 'keith/swift.vim'
+Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-dispatch'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'slim-template/vim-slim.git'
 
 " Snippet stuff
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+Plugin 'alvan/vim-closetag'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -128,6 +133,7 @@ let g:ctrlp_reuse_window  = 'startify'
 " ctrlp-funky
 nnoremap <Leader>f :CtrlPFunky<Cr>
 nnoremap <Leader>b :CtrlPBuffer<Cr>
+nnoremap <Leader>/ :CtrlPLine<Cr>
 
 " set wildignore stuff, mainly for ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*,*/coverage/*
@@ -360,3 +366,21 @@ let g:slime_dont_ask_default = 1
   nmap <leader>m A # => <Esc>
 " Mark the highlighted lines for annotation
   vmap <leader>m :norm A # => <Esc>
+
+" autosave when running :GoBuild
+set autowrite
+
+" vim-closetag
+let g:closetag_filenames = "*.html,*.html.*"
+
+" different tabstop for golang files
+autocmd FileType go setlocal tabstop=4 softtabstop=0 shiftwidth=4 noexpandtab
+
+" use omnicomplete with supertab
+" g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+
+" autoclose omnicomplete window
+autocmd CompleteDone * pclose
+
+" run goimports on save
+" let g:go_fmt_command = "goimports"

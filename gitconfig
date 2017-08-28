@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-name = Murdho
-email = murdho@murdho.com
+	name = Murdho
+	email = murdho@murdho.com
 	signingKey = murdho@murdho.com
 [core]
 	excludesfile = /Users/murdho/.gitignore_global

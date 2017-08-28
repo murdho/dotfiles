@@ -17,10 +17,13 @@ alias prettyjson='ruby -r json -r ap -e "ap JSON.parse(ARGF.read)"'
 alias rdo='rake db:migrate:redo'
 alias rdmd='rake db:migrate:down'
 alias rcs='rails console -s'
+alias rt='rails test'
 alias rdu='rake db:dumbify'
 alias rdmu='rake db:migrate; rake db:dumbify'
 alias rdds='rake db:drop db:setup'
 alias rds='rake db:setup'
+alias rap='rails assets:precompile'
+alias rac='rails assets:clean'
 alias bess='bundle exec spring stop'
 
 # Bundler
@@ -50,6 +53,7 @@ alias cleardnscache='dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 alias vimrc='vim ~/.vimrc'
 alias vimsnip='vim ~/.vim/snippets'
 alias vimplugininstall='vim +PluginInstall +qall'
+alias vimf='vim $(fzf)'
 
 # System
 mkcd () {
@@ -68,3 +72,10 @@ alias vs='vagrant ssh'
 alias vr='vagrant reload'
 alias vh='vagrant halt'
 alias vd='vagrant destroy'
+
+# Go
+alias golang="cd $GOPATH"
+alias gopath="cd $GOPATH"
+
+# Python
+alias p3='python3'

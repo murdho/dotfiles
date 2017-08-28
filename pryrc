@@ -9,10 +9,10 @@ def r
   reload!
 end
 
-def execute(sql)
-  warn 'NOTICE: Running #execute method defined in ~/.pryrc'
-  ActiveRecord::Base.connection.execute(sql)
-end
+# def execute(sql)
+#   warn 'NOTICE: Running #execute method defined in ~/.pryrc'
+#   ActiveRecord::Base.connection.execute(sql)
+# end
 
 def rlog
   @_stdout_logger ||= Logger.new(STDOUT)
