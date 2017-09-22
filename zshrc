@@ -120,3 +120,6 @@ export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 # docker-compose autocomplete
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
+
+# Help locale in Rubymine
+export LC_CTYPE="UTF-8"
