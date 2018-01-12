@@ -19,5 +19,9 @@
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
     "go.coverageDecorator": "gutter",
-    "editor.tabSize": 2,
+    "extensions.ignoreRecommendations": false,
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.enablePreview": false,
 }

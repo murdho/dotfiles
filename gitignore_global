@@ -7,3 +7,5 @@ tags
 .DS_Store
 .idea
 *.iml
+.vscode
+debug

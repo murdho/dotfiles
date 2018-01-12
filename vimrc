@@ -31,6 +31,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-dispatch'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'slim-template/vim-slim.git'
+Plugin 'dhruvasagar/vim-table-mode'
 
 " Snippet stuff
 Plugin 'MarcWeber/vim-addon-mw-utils'
