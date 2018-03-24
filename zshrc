@@ -113,9 +113,9 @@ if hash "awscli" &> /dev/null; then
 fi
 
 # Go
-export GOROOT="/usr/local/go"
-export GOPATH="/Users/murdho/golang"
-export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+export GOROOT=/usr/local/go
+export GOPATH=/Users/murdho/golang
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # docker-compose autocomplete
 fpath=(~/.zsh/completion $fpath)
