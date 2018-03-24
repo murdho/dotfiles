@@ -1,0 +1,27 @@
+{
+    "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "vim.useSystemClipboard": true,
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": [";"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "extension.showCmdLine",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "go.autocompleteUnimportedPackages": true,
+    "go.buildOnSave": "workspace",
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "go.coverageDecorator": "gutter",
+    "extensions.ignoreRecommendations": false,
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.enablePreview": false,
+}

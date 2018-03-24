@@ -98,14 +98,14 @@ export KEYTIMEOUT=1
 # postgres.app command line stuff
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
+# load private env variables
+[ -f ~/.env-private ] && source ~/.env-private
+
 # cooler backwards search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # for some coverage thingies
 # export COVERAGE=true
-
-# rbenv
-eval "$(rbenv init -)"
 
 # awscli autocomplete
 if hash "awscli" &> /dev/null; then
@@ -120,6 +120,3 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # docker-compose autocomplete
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
-
-# Help locale in Rubymine
-export LC_CTYPE="UTF-8"

@@ -73,9 +73,10 @@ alias vr='vagrant reload'
 alias vh='vagrant halt'
 alias vd='vagrant destroy'
 
-# Go
-alias golang="cd $GOPATH"
-alias gopath="cd $GOPATH"
-
-# Python
-alias p3='python3'
+# Util
+# uuid() generates UUID, prints it and copies to clipboard.
+uuid() {
+  local UUID=$(uuidgen | tr '[:upper:]' '[:lower:]')
+  echo $UUID | tr -d '\n' | pbcopy
+  echo $UUID
+}

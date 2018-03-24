@@ -9,3 +9,5 @@ tags
 *.iml
 debug.test
 ~*.xlsx
+.vscode
+debug

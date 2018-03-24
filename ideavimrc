@@ -1,0 +1,2 @@
+" map semicolon to colon, for speed
+nnoremap ; :
