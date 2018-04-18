@@ -7,5 +7,7 @@ tags
 .DS_Store
 .idea
 *.iml
+debug.test
+~*.xlsx
 .vscode
 debug
