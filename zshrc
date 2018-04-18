@@ -113,7 +113,7 @@ if hash "awscli" &> /dev/null; then
 fi
 
 # Go
-export GOROOT="/usr/local/go"
+export GOROOT=`go env GOROOT`
 export GOPATH="/Users/murdho/golang"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 

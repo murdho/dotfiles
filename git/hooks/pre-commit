@@ -1,0 +1,6 @@
+#!/bin/sh
+
+HOOKS_DIR="/Users/murdho/.git/hooks"
+
+source "$HOOKS_DIR/pre-commit.ruby-syntax"
+source "$HOOKS_DIR/pre-commit.todo-comments"

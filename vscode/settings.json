@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
@@ -24,4 +24,37 @@
     "explorer.confirmDelete": false,
     "files.trimTrailingWhitespace": true,
     "workbench.editor.enablePreview": false,
+    "files.associations": {
+        "*.tmpl": "html"
+    },
+    "explorer.openEditors.visible": 0,
+    "vim.disableExtension": false,
+    "workbench.colorTheme": "Base16 Light Google (Murdho)",
+    "terminal.integrated.fontSize": 14,
+    "window.restoreWindows": "none",
+    "clojureVSCode.autoStartNRepl": false,
+    "clojureVSCode.formatOnSave": true,
+    "editor.renderIndentGuides": false,
+    "markdown.extension.toc.unorderedList.marker": "*",
+    "go.enableCodeLens": {
+        "references": false,
+        "runtest": false
+    },
+    // "go.showTestCommand": false,
+    "selectline.alignment": "right",
+    "selectline.displayFormat": "%d lines",
+    // "cSpell.language": "en",
+    "editor.rulers": [
+        120
+    ],
+    "go.docsTool": "guru",
+    "todo-tree.globs": [
+        "!vendor/**",
+        "!node_modules/**"
+    ],
+    "vscode-language-todo.globs": [
+        "!vendor/**",
+        "!node_modules/**"
+    ],
+    "vscode-language-todo.regex": "(//|#|<!--|;|/*)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|REVIEW|BUG|QUESTION|COMBAK|TEMP|DEBUG|OPTIMIZE)",
 }

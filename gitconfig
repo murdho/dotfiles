@@ -6,10 +6,12 @@
 	signingKey = murdho@murdho.com
 [core]
 	excludesfile = /Users/murdho/.gitignore_global
+	hooksPath = /Users/murdho/.git/hooks
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 [commit]
 	gpgsign = true
 [diff]

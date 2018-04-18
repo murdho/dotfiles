@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Allows us to read user input below, assigns stdin to keyboard
+exec < /dev/tty
+
+TODO_COMMENTS=$(git diff --cached | ag '^(\+).*TODO')
+
+if [[ -n "$TODO_COMMENTS" ]]; then
+  echo "Unfinished TODOs:\n$TODO_COMMENTS"
+
+  read -p "Continue (y/n)? " choice
+  case "$choice" in
+    y|Y ) exit 0;;
+    * ) exit 1;;
+  esac
+fi
+
+
