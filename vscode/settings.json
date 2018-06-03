@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Fira Code', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 15,
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
@@ -47,7 +47,6 @@
     "editor.rulers": [
         120
     ],
-    "go.docsTool": "guru",
     "todo-tree.globs": [
         "!vendor/**",
         "!node_modules/**"
@@ -57,4 +56,12 @@
         "!node_modules/**"
     ],
     "vscode-language-todo.regex": "(//|#|<!--|;|/*)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|REVIEW|BUG|QUESTION|COMBAK|TEMP|DEBUG|OPTIMIZE)",
+    "go.hideTestCommandArguments": true,
+    "markdown.extension.toc.updateOnSave": false,
+    "go.formatTool": "goimports",
+    "editor.fontLigatures": true,
+    // "go.useLanguageServer": true,
+    "[ruby]": {
+        "editor.tabSize": 2,
+    }
 }
