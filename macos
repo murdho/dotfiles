@@ -1,0 +1,164 @@
+#!/usr/bin/env bash
+
+# Based on:
+# ~/.macos — https://mths.be/macos
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
+# Set computer name (as done via System Preferences → Sharing)
+#sudo scutil --set ComputerName "0x6D746873"
+#sudo scutil --set HostName "0x6D746873"
+#sudo scutil --set LocalHostName "0x6D746873"
+#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+## General
+# Automatically hide menu bar
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
+# Highlight colour Yellow
+defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.937255 0.690196"
+
+# Click in the scrollbar: Jump to spot that’s clicked
+defaults write NSGlobalDomain AppleScrollerPagingBehavior -int 1
+
+## Desktop & Screen Saver
+# SS Start after 2 minutes
+defaults -currentHost write com.apple.screensaver idleTime -int 120
+
+# SS Choose custom one
+# defaults -currentHost write com.apple.screensaver moduleDict '{moduleName = "Computer Name"; path = "/System/Library/Frameworks/ScreenSaver.framework/Resources/Computer Name.saver"; type = 0;}'
+
+# D Choose image
+
+# Dock
+# Hide dock
+defaults write com.apple.dock autohide -bool true
+
+# Smaller size
+defaults write com.apple.dock tilesize -int 58
+
+# Mission Control
+# Disable automatic rearrange of spaces
+defaults write com.apple.dock mru-spaces -bool false
+
+# Language & Region
+# English (primary)
+# Estonian
+# Advanced: custom Short date format
+# Security & Privacy
+# Require password immediately
+# Show message when screen locked
+# FileVault on (if not on)
+# Firewall on (or off)
+# Displays
+# Change arrangement
+# Change default display
+# Night Shift Schedule: Sunset to Sunrise
+# Laptop screen disable automatically adjust brightness
+# Energy Saver
+# Disable slightly dim display while on battery power
+# Keyboard
+# K Key repeat rate Fast (do it in cli)
+# K Delay until repeat Short (do it in cli)
+# K Disable adjust keyboard brightness
+# K Customise touch bar strip
+# K Modifier Keys (Caps Lock as Control)
+# T Disable correct spelling auto
+# T Disable smart quotes
+# S Full Keyboard Access: All controls (do it in cli)
+# IS U.S, Estonian
+# Mouse (mouse must be connected)
+# Enable secondary click
+# Increase tracking speed
+# Enable swipe between pages
+# Trackpad
+# Enable tap to click
+# Click: light
+# Sound
+# Alert sound: Pop
+# Alert volume: 0
+# Show volume in menu bar
+# iCloud
+# Disable iCloud Drive
+# Disable Photos
+# Internet Accounts
+# Google enable Contacts, Calendars
+# App Store
+# Free downloads: Save password
+# Bluetooth
+# Show in menu bar
+# Sharing
+# Computer name
+# Users & Groups
+# Enable Guest
+# Siri
+# Disable
+# Date & Time
+# Display time with seconds
+# Show date
+# Finder
+# Sidebar
+# Remove all my files
+# Remove iCloud Drive
+# Remove Airdrop
+# Add home folder, show at the top
+# Add Hard disks
+# Remove Remote Disc
+# Remove tags subcategory
+# General
+# New windows open with home dir
+# Disable open folders in tabs
+# Advanced
+# Disable warnings
+# View options
+# List view
+# Sort by name
+# Columns: add Date added
+# Use as defaults
+# Show status bar
+# Dock
+# Remove bunch of apps
+# Show downloads stack as Folder
+# Add applications dir as stack
+# Menu bar
+# Battery
+# Show percentage
+# Apps
+# Google Chrome (default browser; uBlock Origin; DuckDuckGo)
+# Todoist
+# Slack
+# Dropbox (selective sync)
+# Aerial Screen Saver https://github.com/JohnCoates/Aerial
+# Wakatime
+# VSCode (ext: wakatime, go, vscode-proto3 | prefs)
+# Postgres.app
+# Simplenote
+# 1Password (and Safari, Chrome extensions)
+# Authy
+# iTerm (font Source Code Pro; use settings from dotfiles)
+# Homebrew
+# ZSH with oh-my-zsh
+# CLI: git, wget, vim, pgcli, pip, npm, protoc-gen-go, fzf, ag
+# GPG Suite
+# Postico
+# Insomnia
+# Spotify
+# Spectacle
+# Gitify
+# dotenv
+# linking public files
+# creating private files ($HOME/.env-private)
+# macos defaults (enable key repeat, faster key repeat, etc)
+# (quicklook plugins) brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json betterzip qlimagesize suspicious-package qlvideo
