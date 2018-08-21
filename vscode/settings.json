@@ -18,18 +18,22 @@
     "go.buildOnSave": "workspace",
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
-    "go.coverageDecorator": "gutter",
+    "go.coverageDecorator": {
+        "type": "gutter"
+    },
     "extensions.ignoreRecommendations": false,
     "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
     "workbench.editor.enablePreview": false,
     "files.associations": {
         "*.tmpl": "html"
     },
     "explorer.openEditors.visible": 0,
     "vim.disableExtension": false,
-    "workbench.colorTheme": "Base16 Light Google (Murdho)",
+    "workbench.colorTheme": "Base16 Dark Paraiso",
     "terminal.integrated.fontSize": 14,
     "window.restoreWindows": "none",
     "clojureVSCode.autoStartNRepl": false,
@@ -40,28 +44,31 @@
         "references": false,
         "runtest": false
     },
-    // "go.showTestCommand": false,
     "selectline.alignment": "right",
     "selectline.displayFormat": "%d lines",
-    // "cSpell.language": "en",
     "editor.rulers": [
         120
-    ],
-    "todo-tree.globs": [
-        "!vendor/**",
-        "!node_modules/**"
     ],
     "vscode-language-todo.globs": [
         "!vendor/**",
         "!node_modules/**"
     ],
     "vscode-language-todo.regex": "(//|#|<!--|;|/*)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|REVIEW|BUG|QUESTION|COMBAK|TEMP|DEBUG|OPTIMIZE)",
-    "go.hideTestCommandArguments": true,
     "markdown.extension.toc.updateOnSave": false,
     "go.formatTool": "goimports",
     "editor.fontLigatures": true,
-    // "go.useLanguageServer": true,
+    "go.useLanguageServer": true,
     "[ruby]": {
         "editor.tabSize": 2,
-    }
+    },
+    "[markdown]": {
+        "editor.lineNumbers": "off",
+        "editor.rulers": [],
+        "editor.fontFamily": "iA Writer Duospace",
+        "editor.fontSize": 16,
+        "editor.lineHeight": 25,
+        "editor.quickSuggestions": false,
+        "editor.minimap.enabled": false,
+        "editor.renderLineHighlight": "none",
+    },
 }

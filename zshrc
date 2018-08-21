@@ -120,3 +120,14 @@ export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 # docker-compose autocomplete
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
+
+# rbenv
+if [ -x "$(command -v rbenv)" ]; then
+  eval "$(rbenv init -)"
+fi
+
+# stack global install path
+export PATH=$PATH:/Users/murdho/.local/bin
+
+# handle this annoying change https://github.com/robbyrussell/oh-my-zsh/pull/6611
+export LESS='-R'

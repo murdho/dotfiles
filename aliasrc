@@ -36,6 +36,22 @@ alias gds='git diff --staged'
 alias gpf='ggpush --force-with-lease'
 alias grbi2='git rebase -i HEAD~2'
 alias grbi3='git rebase -i HEAD~3'
+alias gbdf='gb -D $(gb | fzf -m)'
+
+gcof() { # checkout git branch
+  local branches branch
+  branches=$(git branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
+gcorf() { # checkout git branch (including remote branches)
+  local branches branch
+  branches=$(git branch --all | grep -v HEAD) &&
+  branch=$(echo "$branches" |
+           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
+  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+}
 
 # Git Flow
 alias gff='git flow feature'
