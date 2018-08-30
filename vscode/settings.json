@@ -71,4 +71,5 @@
         "editor.minimap.enabled": false,
         "editor.renderLineHighlight": "none",
     },
+    "workbench.activityBar.visible": true,
 }

@@ -110,6 +110,11 @@ todo() {
   fi
 }
 
+# find_and_replace
+find_and_replace() {
+  ag $1 --files-with-matches | xargs -I {} gsed -i '.back' -e "s/$1/$2/g" {}
+}
+
 # Redis (containerized)
 alias redis-cli='docker exec -it redis redis-cli'
 

@@ -32,6 +32,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'slim-template/vim-slim.git'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'ayu-theme/ayu-vim'
 
 " Snippet stuff
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -48,6 +49,11 @@ filetype plugin indent on    " required
 " nice colors
 " set background=dark
 " colorscheme base16-tomorrow
+
+" ayu theme stuff
+set termguicolors
+let ayucolor="mirage"
+colorscheme ayu
 
 " syntax highlighting
 syntax on
