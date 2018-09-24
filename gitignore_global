@@ -11,3 +11,4 @@ debug.test
 ~*.xlsx
 .vscode
 debug
+.yardoc
