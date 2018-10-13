@@ -30,6 +30,8 @@ alias bess='bundle exec spring stop'
 alias be='bundle exec'
 alias berc='bundle exec rubocop'
 alias bers='bundle exec rspec'
+alias biv='bundle install --path=vendor'
+alias b='biv'
 
 # Git
 alias gds='git diff --staged'
@@ -127,4 +129,4 @@ recreatedb() {
 }
 
 # Golang
-alias goplay='mkdir -p ~/golang/src/play; cd ~/golang/src/play'
+alias goplay='mkdir -p ~/Developer/golang/src/play; cd ~/Developer/golang/src/play'
