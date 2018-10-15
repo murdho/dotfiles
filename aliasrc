@@ -31,7 +31,7 @@ alias be='bundle exec'
 alias berc='bundle exec rubocop'
 alias bers='bundle exec rspec'
 alias biv='bundle install --path=vendor'
-alias b='biv'
+alias bi='bundle install'
 
 # Git
 alias gds='git diff --staged'
