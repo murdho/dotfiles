@@ -113,9 +113,11 @@ if hash "awscli" &> /dev/null; then
 fi
 
 # Go
-export GOROOT=`go env GOROOT`
-export GOPATH="/Users/murdho/golang"
-export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+if [ -x "$(command -v go)" ]; then
+  export GOROOT=`go env GOROOT`
+  export GOPATH="/Users/murdho/Developer/golang"
+  export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+fi
 
 # docker-compose autocomplete
 fpath=(~/.zsh/completion $fpath)
