@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git github git-flow ssh-agent rails vagrant aws)
+plugins=(git ssh-agent rails)
 
 # User configuration
 
@@ -106,11 +106,6 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
 # for some coverage thingies
 # export COVERAGE=true
-
-# awscli autocomplete
-if hash "awscli" &> /dev/null; then
-  source /usr/local/share/zsh/site-functions/_aws
-fi
 
 # Go
 if [ -x "$(command -v go)" ]; then
