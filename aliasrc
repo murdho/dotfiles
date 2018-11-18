@@ -71,8 +71,7 @@ alias cleardnscache='dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 # Vim
 alias vimrc='vim ~/.vimrc'
-alias vimsnip='vim ~/.vim/snippets'
-alias vimplugininstall='vim +PluginInstall +qall'
+# alias vimsnip='vim ~/.vim/snippets'
 alias vimf='vim $(fzf)'
 
 # System
@@ -118,7 +117,7 @@ find_and_replace() {
 }
 
 # Redis (containerized)
-alias redis-cli='docker exec -it redis redis-cli'
+# alias redis-cli='docker exec -it redis redis-cli'
 
 # Postgres
 # recreatedb() recreates local DB that has the same name as its owner.
@@ -128,5 +127,8 @@ recreatedb() {
   psql -ec "CREATE DATABASE $1 WITH OWNER $1;"
 }
 
-# Golang
+# Go
 alias goplay='mkdir -p ~/Developer/golang/src/play; cd ~/Developer/golang/src/play'
+
+# Python
+alias p3='python3'

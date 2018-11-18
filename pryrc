@@ -1,9 +1,9 @@
-# begin
-#   private_file = Dir.home + '/.pryrc-private'
-#   load private_file if File.exists?(private_file)
-# rescue
-#   raise if RUBY_VERSION.to_i > 1
-# end
+begin
+  private_file = Dir.home + '/.pryrc-private'
+  load private_file if File.exists?(private_file)
+rescue
+  raise if RUBY_VERSION.to_i > 1
+end
 
 def r
   reload!

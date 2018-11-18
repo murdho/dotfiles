@@ -2446,10 +2446,12 @@
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>929 110 445 365 0 0 1440 900 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 381 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 274 796 486 0 0 1440 900 </string>
+	<string>392 396 796 486 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 900 </string>
+	<string>0 0 2560 1440 0 0 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_8CBFF0D4-EB93-4986-8120-9ADFA1490110</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_8CBFF0D4-EB93-4986-8120-9ADFA1490110_selection</key>
@@ -2458,6 +2460,8 @@
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>AWDS Pane Directory</key>
 			<string></string>
@@ -3128,7 +3132,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 14</string>
+			<string>FiraCode-Regular 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -3168,6 +3172,15 @@
 				<real>0.1748567670583725</real>
 				<key>Red Component</key>
 				<real>0.14516641199588776</real>
+			</dict>
+			<key>Semantic History</key>
+			<dict>
+				<key>action</key>
+				<string>editor</string>
+				<key>editor</key>
+				<string>com.microsoft.VSCode</string>
+				<key>text</key>
+				<string></string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -3213,6 +3226,8 @@
 			<string>/Users/murdho</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -3273,7 +3288,7 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
-	<false/>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -3283,7 +3298,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-11T06:37:40Z</date>
+	<date>2018-11-02T08:51:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -3331,7 +3346,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.3</string>
+	<string>3.2.5</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>

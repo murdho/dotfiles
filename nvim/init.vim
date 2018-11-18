@@ -1,6 +1,3 @@
-" Make improved.
-set nocompatible
-
 " Use Pathogen for plugins
 execute pathogen#infect()
 
@@ -58,7 +55,7 @@ set shiftwidth=4
 set ignorecase
 
 " Enable filetype plugins
-filetype plugin indent on
+filetype plugin on
 
 " Set leader to comma
 let mapleader=","
@@ -96,18 +93,3 @@ let g:strip_whitelines_at_eof=1
 
 " Show spaces before or in-between tabs
 let g:show_spaces_that_precede_tabs=1
-
-" Show ruler
-set ruler
-
-" Partial search matching
-set incsearch
-
-" Make backspace to erase more
-set backspace=2
-
-" Highlight search stuff
-set hlsearch
-
-" Turn bells off
-set belloff=all
