@@ -129,8 +129,18 @@ export PATH=$PATH:/Users/murdho/.local/bin
 # handle this annoying change https://github.com/robbyrussell/oh-my-zsh/pull/6611
 export LESS='-R'
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/murdho/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/murdho/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+# Flutter
+export PATH=$PATH:/Users/murdho/Developer/flutter/bin
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/murdho/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/murdho/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+# Make Crystal tooling happy https://gist.github.com/murdho/8c3f16422c954a6793829f9bf5f8d1df
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
+
+# Set home for Java
+export JAVA_HOME=`/usr/libexec/java_home -v 11`
+
+# Make Ruby installer happy
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl --with-readline-dir=/usr/local/opt/readline"
+
+# Google Cloud SDK stuff
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'

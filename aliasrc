@@ -12,6 +12,7 @@ alias serve_dir='ruby -run -ehttpd . -p8000'
 alias rtags='ctags -R --languages=ruby --exclude=.git --exclude=log'
 alias rtags-gems='ctags -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems . $(bundle list --paths)'
 alias prettyjson='ruby -r json -r ap -e "ap JSON.parse(ARGF.read)"'
+alias yaml2json='ruby -r yaml -r json -e "raise %|Missing required .yml argument| unless ARGV[0]; puts JSON.pretty_generate(YAML.load_file(ARGV[0]))"'
 
 # Rails
 alias rdo='rake db:migrate:redo'
@@ -132,3 +133,6 @@ alias goplay='mkdir -p ~/Developer/golang/src/play; cd ~/Developer/golang/src/pl
 
 # Python
 alias p3='python3'
+
+# Notes
+alias notes='cd ~/Dropbox/notes'

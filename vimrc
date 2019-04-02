@@ -1,3 +1,6 @@
+" TODO: ruby code navigation
+" https://www.tkalin.com/blog_posts/ide-like-go-to-declaration-in-vim/
+
 " Make improved.
 set nocompatible
 
@@ -22,15 +25,24 @@ set noswapfile
 " Enable highlighting
 syntax on
 
+" Enable termguicolors
+set termguicolors
+
+" Enable color scheme "Ayu"
+let ayucolor="light"  " for light version of theme
+" let ayucolor="mirage" " for mirage version of theme
+" let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
+
 " Disable arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>
 
 " Enable mouse interaction
 set mouse=a
@@ -69,6 +81,9 @@ nnoremap <Leader>b :CtrlPBuffer<Cr>
 " Set ignores for CtrlP
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*,*/coverage/*
 
+" Map CtrlP-Funky
+nnoremap <Leader>f :CtrlPFunky<Cr>
+
 " Remap command history shortcut
 nnoremap q: :
 
@@ -85,8 +100,8 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
 " Highlight extra whitespace
-let g:better_whitespace_enabled=1
-let g:better_whitespace_ctermcolor='yellow'
+" let g:better_whitespace_enabled=1
+" let g:better_whitespace_ctermcolor='yellow'
 
 " Strip whitespace on save
 let g:strip_whitespace_on_save=1
@@ -111,3 +126,6 @@ set hlsearch
 
 " Turn bells off
 set belloff=all
+
+" Show multiple options when tab completing commands
+set wildmenu
