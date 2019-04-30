@@ -1,3 +1,5 @@
+Pry.config.pager = false
+
 begin
   private_file = Dir.home + '/.pryrc-private'
   load private_file if File.exists?(private_file)
