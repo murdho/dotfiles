@@ -12,3 +12,5 @@ debug.test
 .vscode
 debug
 .yardoc
+vendor
+.bundle

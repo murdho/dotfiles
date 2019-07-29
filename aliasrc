@@ -26,6 +26,7 @@ alias rds='rake db:setup'
 alias rap='rails assets:precompile'
 alias rac='rails assets:clean'
 alias bess='bundle exec spring stop'
+alias rg='rails generate'
 
 # Bundler
 alias be='bundle exec'
