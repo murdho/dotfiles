@@ -118,7 +118,11 @@ fi
 
 # docker-compose autocomplete
 fpath=(~/.zsh/completion $fpath)
-autoload -Uz compinit && compinit -i
+
+# + haskell stack autocomplete
+autoload -Uz +X compinit && compinit -i
+autoload -U +X bashcompinit && bashcompinit
+eval "$(stack --bash-completion-script stack)"
 
 # rbenv
 if [ -x "$(command -v rbenv)" ]; then
@@ -148,3 +152,9 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl --with-rea
 
 # Jetbrains Toolbox shortcuts location
 export PATH=$PATH:/Users/murdho/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/murdho/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/murdho/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/murdho/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/murdho/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
