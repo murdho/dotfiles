@@ -96,3 +96,7 @@ end
 def spy_object(*args)
   SpyObject.new(*args)
 end
+
+def sfd
+  load "shittyfirstdraft.rb"
+end

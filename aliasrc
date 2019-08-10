@@ -27,6 +27,7 @@ alias rap='rails assets:precompile'
 alias rac='rails assets:clean'
 alias bess='bundle exec spring stop'
 alias rg='rails generate'
+alias sfd='touch -a lib/shittyfirstdraft.rb'
 
 # Bundler
 alias be='bundle exec'
