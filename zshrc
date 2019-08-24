@@ -122,7 +122,9 @@ fpath=(~/.zsh/completion $fpath)
 # + haskell stack autocomplete
 autoload -Uz +X compinit && compinit -i
 autoload -U +X bashcompinit && bashcompinit
-eval "$(stack --bash-completion-script stack)"
+if [ -x "$(command -v stack)" ]; then
+    eval "$(stack --bash-completion-script stack)"
+fi
 
 # rbenv
 if [ -x "$(command -v rbenv)" ]; then
