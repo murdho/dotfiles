@@ -14,3 +14,4 @@ debug
 .yardoc
 vendor
 .bundle
+.generators
