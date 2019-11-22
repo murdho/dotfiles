@@ -133,6 +133,7 @@ recreatedb() {
 # Go
 alias goplay='mkdir -p ~/Developer/golang/src/play; cd ~/Developer/golang/src/play'
 alias gomurdho='mkdir -p ~/Developer/golang/src/github.com/murdho; cd ~/Developer/golang/src/github.com/murdho'
+alias gt='go test -v ./...'
 
 # Python
 alias p3='python3'

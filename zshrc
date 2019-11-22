@@ -156,7 +156,10 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl --with-rea
 export PATH=$PATH:/Users/murdho/bin
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/murdho/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/murdho/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/murdho/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/murdho/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/murdho/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/murdho/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/murdho/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/murdho/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Set the locale
+export LC_ALL=en_GB.UTF-8
