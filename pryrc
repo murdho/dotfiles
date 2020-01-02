@@ -88,8 +88,13 @@ class SpyObject
 
   def method_missing(method, *args)
     name = "Spy '#{identifier}'".strip
-    puts "#{name} method=#{method}; args=#{args.inspect}; block=#{block_given?}"
+    loc = caller_locations(1, 1).first
+    puts "#{loc_str(loc)} #{name} method=#{method}; args=#{args.inspect}; block=#{block_given?}"
     self
+  end
+
+  def loc_str(loc)
+    verbose ? "#{loc.path}:#{loc.lineno} => " : ""
   end
 end
 

@@ -20,3 +20,5 @@
 	prompt = false
 [http]
 	postBuffer = 2M # https://stackoverflow.com/a/42702907/6181671
+[alias]
+	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"

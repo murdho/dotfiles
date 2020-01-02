@@ -19,6 +19,7 @@ alias rdo='rake db:migrate:redo'
 alias rdmd='rake db:migrate:down'
 alias rcs='rails console -s'
 alias rt='rails test'
+alias rtf='rails test $(fzf)'
 alias rdu='rake db:dumbify'
 alias rdmu='rake db:migrate; rake db:dumbify'
 alias rdds='rake db:drop db:setup'
@@ -35,6 +36,9 @@ alias berc='bundle exec rubocop'
 alias bers='bundle exec rspec'
 alias biv='bundle install --path=vendor'
 alias bi='bundle install'
+alias bpa='bundle package --all'
+alias bipa='bundle install; bundle package --all'
+alias ber='bundle exec rerun --'
 
 # Git
 alias gds='git diff --staged'
@@ -42,6 +46,7 @@ alias gpf='ggpush --force-with-lease'
 alias grbi2='git rebase -i HEAD~2'
 alias grbi3='git rebase -i HEAD~3'
 alias gbdf='gb -D $(gb | fzf -m)'
+alias gmm='gco master && gl && gco - && gm master --no-edit'
 
 gcof() { # checkout git branch
   local branches branch
@@ -140,3 +145,21 @@ alias p3='python3'
 
 # Notes
 alias notes='cd ~/Dropbox/notes'
+
+# Kubernetes
+alias k='kubectl'
+
+# Docker
+alias dk='docker'
+alias dkc='docker-compose'
+
+# What process is listening on a port?
+listening() {
+    if [ $# -eq 0 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P
+    elif [ $# -eq 1 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
+    else
+        echo "Usage: listening [pattern]"
+    fi
+}
