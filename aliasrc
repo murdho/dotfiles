@@ -13,6 +13,7 @@ alias rtags='ctags -R --languages=ruby --exclude=.git --exclude=log'
 alias rtags-gems='ctags -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems . $(bundle list --paths)'
 alias prettyjson='ruby -r json -r ap -e "ap JSON.parse(ARGF.read)"'
 alias yaml2json='ruby -r yaml -r json -e "raise %|Missing required .yml argument| unless ARGV[0]; puts JSON.pretty_generate(YAML.load_file(ARGV[0]))"'
+alias ruby2json='ruby -r json -e "puts JSON.pretty_generate(eval(ARGF.read))"'
 
 # Rails
 alias rdo='rake db:migrate:redo'
@@ -34,10 +35,11 @@ alias sfd='touch -a lib/shittyfirstdraft.rb'
 alias be='bundle exec'
 alias berc='bundle exec rubocop'
 alias bers='bundle exec rspec'
-alias biv='bundle install --path=vendor'
 alias bi='bundle install'
-alias bpa='bundle package --all'
-alias bipa='bundle install; bundle package --all'
+alias biv='bundle install --path=vendor'
+alias bpa='bundle package --all --all-platforms'
+alias bipa='bi && bpa'
+alias bivpa='biv && bpa'
 alias ber='bundle exec rerun --'
 
 # Git
@@ -162,4 +164,9 @@ listening() {
     else
         echo "Usage: listening [pattern]"
     fi
+}
+
+# Google Cloud
+gsutildl() {
+    gsutil cp $1 .
 }
