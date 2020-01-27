@@ -105,3 +105,11 @@ end
 def sfd
   load "shittyfirstdraft.rb"
 end
+
+def concurrently(n, &block)
+  threads = (1..n).map do |i|
+    Thread.new(i, &block)
+  end
+
+  threads.each(&:join)
+end
