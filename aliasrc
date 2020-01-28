@@ -49,6 +49,8 @@ alias grbi2='git rebase -i HEAD~2'
 alias grbi3='git rebase -i HEAD~3'
 alias gbdf='gb -D $(gb | fzf -m)'
 alias gmm='gco master && gl && gco - && gm master --no-edit'
+alias glsu='ggsup; gl'
+alias glsup='glsu'
 
 gcof() { # checkout git branch
   local branches branch
