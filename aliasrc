@@ -115,13 +115,13 @@ uuid() {
 }
 
 # todo is very simple solution for quick, short-term notes
-todo() {
-  if [[ -z "$1" ]]; then
-    cat ./TODO
-  else
-    echo "$@" >> ./TODO
-  fi
-}
+# todo() {
+# if [[ -z "$1" ]]; then
+# cat ./TODO
+# else
+# echo "$@" >> ./TODO
+# fi
+# }
 
 # find_and_replace
 find_and_replace() {
@@ -172,3 +172,10 @@ listening() {
 gsutildl() {
     gsutil cp $1 .
 }
+
+# NPM
+alias nr='npm run'
+alias nrd='nr dev'
+alias nrl='nr lint'
+alias nrf='nr format'
+alias nrb='nr build'
