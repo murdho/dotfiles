@@ -51,6 +51,7 @@ alias gbdf='gb -D $(gb | fzf -m)'
 alias gmm='gco master && gl && gco - && gm master --no-edit'
 alias glsu='ggsup; gl'
 alias glsup='glsu'
+alias gcleanf='git clean -df'
 
 gcof() { # checkout git branch
   local branches branch
@@ -143,6 +144,7 @@ recreatedb() {
 alias goplay='mkdir -p ~/Developer/golang/src/play; cd ~/Developer/golang/src/play'
 alias gomurdho='mkdir -p ~/Developer/golang/src/github.com/murdho; cd ~/Developer/golang/src/github.com/murdho'
 alias gt='go test -v ./...'
+alias b='buffalo'
 
 # Python
 alias p3='python3'
@@ -179,3 +181,8 @@ alias nrd='nr dev'
 alias nrl='nr lint'
 alias nrf='nr format'
 alias nrb='nr build'
+
+# Multipass
+alias m='multipass'
+alias ms='multipass shell'
+alias ml='multipass ls'
