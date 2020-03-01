@@ -16,3 +16,5 @@ ln -s ~/.dotfiles/oh-my-zsh/themes/fishy-murdho.zsh-theme ~/.oh-my-zsh/themes/
 
 ln -s ~/.dotfiles/iterm2 ~/.iterm2
 echo "Configure iTerm2 manually to use correct config"
+
+# TODO: add bat config with correct theme
