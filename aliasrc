@@ -154,6 +154,12 @@ alias notes='cd ~/Dropbox/notes'
 
 # Kubernetes
 alias k='kubectl'
+alias kctx='kubectx'
+alias kns='kubens'
+
+# Kubeless
+alias kls='kubeless'
+alias klsf='kubeless function'
 
 # Docker
 alias dk='docker'
@@ -186,3 +192,7 @@ alias nrb='nr build'
 alias m='multipass'
 alias ms='multipass shell'
 alias ml='multipass ls'
+
+# Civo
+alias c='civo'
+alias ck='civo kubernetes'
