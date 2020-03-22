@@ -163,10 +163,6 @@ alias k='kubectl'
 alias kctx='kubectx'
 alias kns='kubens'
 
-# Kubeless
-alias kls='kubeless'
-alias klsf='kubeless function'
-
 # Docker
 alias dk='docker'
 alias dkc='docker-compose'
