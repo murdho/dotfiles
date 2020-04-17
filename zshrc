@@ -44,6 +44,10 @@ COMPLETION_WAITING_DOTS="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
+# Let's keep the history.
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -167,6 +171,6 @@ export LC_ALL=en_GB.UTF-8
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/murdho/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
-# Make node@12 visible to compilers.
-export LDFLAGS="-L/usr/local/opt/node@12/lib"
-export CPPFLAGS="-I/usr/local/opt/node@12/include"
+# Make node visible to compilers.
+export LDFLAGS="-L/usr/local/opt/node/lib"
+export CPPFLAGS="-I/usr/local/opt/node/include"

@@ -34,6 +34,7 @@ alias sfd='touch -a lib/shittyfirstdraft.rb'
 # Bundler
 alias be='bundle exec'
 alias berc='bundle exec rubocop'
+alias berca='bundle exec rubocop -a'
 alias bers='bundle exec rspec'
 alias bi='bundle install'
 alias biv='bundle install --path=vendor'
@@ -75,6 +76,9 @@ alias gfff='gff finish'
 alias gfh='git flow hotfix'
 alias gfhs='gfh start'
 alias gfhf='gfh finish -n'
+
+# Conventional Commits
+alias convcoms='cat ~/Documents/commit-types.md'
 
 # GPG
 alias encrypt='gpg --armor --symmetric --cipher-algo AES256'
@@ -162,6 +166,7 @@ alias notes='cd ~/Dropbox/notes'
 alias k='kubectl'
 alias kctx='kubectx'
 alias kns='kubens'
+alias kall='kubectl get all -A'
 
 # Docker
 alias dk='docker'
