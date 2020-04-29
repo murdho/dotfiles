@@ -7,6 +7,7 @@ ln -s ~/.dotfiles/npmrc ~/.npmrc
 ln -s ~/.dotfiles/pryrc ~/.pryrc
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ln -s ~/.dotfiles/zshrc ~/.zshrc
+ln -s ~/.dotfiles/rubocop.yml ~/.rubocop.yml
 
 ln -s ~/.dotfiles/git ~/.git
 ln -s ~/.dotfiles/nvim ~/.nvim
