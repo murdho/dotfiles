@@ -171,6 +171,5 @@ export LC_ALL=en_GB.UTF-8
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/murdho/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
-# Make node visible to compilers.
-export LDFLAGS="-L/usr/local/opt/node/lib"
-export CPPFLAGS="-I/usr/local/opt/node/include"
+# Enable direnv (direnv.net)
+eval "$(direnv hook zsh)"
