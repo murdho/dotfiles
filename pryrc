@@ -2,7 +2,7 @@ Pry.config.pager = false
 
 begin
   private_file = Dir.home + '/.pryrc-private'
-  load private_file if File.exists?(private_file)
+  load private_file if File.exist?(private_file)
 rescue
   raise if RUBY_VERSION.to_i > 1
 end

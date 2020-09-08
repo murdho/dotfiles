@@ -188,6 +188,11 @@ gsutildl() {
     gsutil cp $1 .
 }
 
+# ipinfo.io
+ipinfo() {
+    curl -s 'https://ipinfo.io/widget' -H 'referer: https://ipinfo.io/' | jq
+}
+
 # NPM
 alias nr='npm run'
 alias nrd='nr dev'
