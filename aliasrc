@@ -9,7 +9,7 @@ cdpath+=~/Developer
 
 # Shitty First Draft
 alias sfd-init-rb='touch lib/shittyfirstdraft.rb'
-alias sfd-init-go='mkdir -p cmd/sfd && echo "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tfmt.Println(\"sfd\")\n}\n" > cmd/sfd/sfd.go'
+alias sfd-init-go='mkdir -p cmd/sfd && echo "package main\n\nfunc main() {\n\tprintln(\"sfd\")\n}\n" > cmd/sfd/sfd.go'
 alias gosfd='go run cmd/sfd/sfd.go'
 
 # Ruby
