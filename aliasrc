@@ -7,6 +7,11 @@ alias dev='~/Developer'
 setopt auto_cd
 cdpath+=~/Developer
 
+# Shitty First Draft
+alias sfd-init-rb='touch lib/shittyfirstdraft.rb'
+alias sfd-init-go='mkdir -p cmd/sfd && echo "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tfmt.Println(\"sfd\")\n}\n" > cmd/sfd/sfd.go'
+alias gosfd='go run cmd/sfd/sfd.go'
+
 # Ruby
 alias serve_dir='ruby -run -ehttpd . -p8000'
 alias rtags='ctags -R --languages=ruby --exclude=.git --exclude=log'
@@ -29,7 +34,6 @@ alias rap='rails assets:precompile'
 alias rac='rails assets:clean'
 alias bess='bundle exec spring stop'
 alias rg='rails generate'
-alias sfd='touch -a lib/shittyfirstdraft.rb'
 
 # Bundler
 alias be='bundle exec'
