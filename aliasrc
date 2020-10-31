@@ -47,6 +47,10 @@ alias bipa='bi && bpa'
 alias bivpa='biv && bpa'
 alias ber='bundle exec rerun --'
 
+# Foreman
+alias fm='foreman'
+alias fms='foreman start'
+
 # Git
 alias gds='git diff --staged'
 alias gpf='ggpush --force-with-lease'
@@ -176,10 +180,20 @@ alias kall='kubectl get all -A'
 alias dk='docker'
 alias dkc='docker-compose'
 
+# Attach to docker-compose service container
+dkc-attach() {
+   if [ $# -eq 1 ]; then
+        docker attach $(docker-compose ps -q $1)
+    else
+        echo "Usage: dkc-attach [service name]"
+    fi
+}
+
 # What process is listening on a port?
 listening() {
     if [ $# -eq 0 ]; then
         sudo lsof -iTCP -sTCP:LISTEN -n -P
+
     elif [ $# -eq 1 ]; then
         sudo lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
     else
@@ -210,8 +224,8 @@ alias ms='multipass shell'
 alias ml='multipass ls'
 
 # Civo
-alias c='civo'
-alias ck='civo kubernetes'
+# alias c='civo'
+# alias ck='civo kubernetes'
 
 # OpenFaaS
 alias f='faas-cli'

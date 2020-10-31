@@ -113,3 +113,7 @@ def concurrently(n, &block)
 
   threads.each(&:join)
 end
+
+def bytes(s)
+  s.bytes.map { |n| '0x%02X' % (n & 0xFF) }.join(" ")
+end
