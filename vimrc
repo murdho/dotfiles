@@ -29,9 +29,9 @@ syntax on
 set termguicolors
 
 " Enable color scheme "Ayu"
-let ayucolor="light"  " for light version of theme
+" let ayucolor="light"  " for light version of theme
 " let ayucolor="mirage" " for mirage version of theme
-" let ayucolor="dark"   " for dark version of theme
+let ayucolor="dark"   " for dark version of theme
 colorscheme ayu
 
 " Disable arrow keys

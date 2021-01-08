@@ -173,3 +173,5 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/murdho/Library/Caches/heroku/autocomplete/zsh_se
 
 # Enable direnv (direnv.net)
 eval "$(direnv hook zsh)"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

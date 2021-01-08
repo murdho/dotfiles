@@ -109,6 +109,9 @@ alias htop='sudo htop'
 alias sdel='srm -v'
 alias sdelr='srm -rv'
 
+# Watch
+alias watch='watch -n 1 ' # If the last character of the alias value is a blank, then the next command word following the alias is also checked for alias expansion.
+
 # Vagrant
 alias v='vagrant'
 alias vu='vagrant up'
@@ -162,7 +165,7 @@ recreatedb() {
 alias goplay='mkdir -p ~/Developer/golang/src/play; cd ~/Developer/golang/src/play'
 alias gomurdho='mkdir -p ~/Developer/golang/src/github.com/murdho; cd ~/Developer/golang/src/github.com/murdho'
 alias gt='go test -v ./...'
-alias b='buffalo'
+# alias b='buffalo'
 
 # Python
 alias p3='python3'
@@ -175,6 +178,7 @@ alias k='kubectl'
 alias kctx='kubectx'
 alias kns='kubens'
 alias kall='kubectl get all -A'
+alias mk='minikube'
 
 # Docker
 alias dk='docker'

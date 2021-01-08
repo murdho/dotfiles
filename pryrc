@@ -1,4 +1,6 @@
-Pry.config.pager = false
+if defined? Pry
+  Pry.config.pager = false
+end
 
 begin
   private_file = Dir.home + '/.pryrc-private'

@@ -5,6 +5,7 @@ ln -s ~/.dotfiles/gitignore_global ~/.gitignore_global
 ln -s ~/.dotfiles/ideavimrc ~/.ideavimrc
 ln -s ~/.dotfiles/npmrc ~/.npmrc
 ln -s ~/.dotfiles/pryrc ~/.pryrc
+ln -s ~/.dotfiles/pryrc ~/.irbrc
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/rubocop.yml ~/.rubocop.yml
