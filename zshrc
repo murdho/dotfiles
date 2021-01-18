@@ -55,7 +55,7 @@ SAVEHIST=$HISTSIZE
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent rails docker buffalo minikube)
+plugins=(git ssh-agent rails docker minikube)
 
 # User configuration
 
