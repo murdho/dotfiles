@@ -215,6 +215,11 @@ ipinfo() {
     curl -s 'https://ipinfo.io/widget' -H 'referer: https://ipinfo.io/' | jq
 }
 
+# Toggle dark mode
+dark-mode() {
+  osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to not dark mode'
+}
+
 # NPM
 alias nr='npm run'
 alias nrd='nr dev'
