@@ -241,3 +241,6 @@ alias ml='multipass ls'
 
 # The Silver Searcher
 alias ag='ag --hidden'
+
+# Edit hosts
+alias hosts='sudo vim /etc/hosts'

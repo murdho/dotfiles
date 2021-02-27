@@ -177,4 +177,6 @@ eval "$(direnv hook zsh)"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # nodenv
-eval "$(nodenv init -)"
+if [ -x "$(command -v nodenv)" ]; then
+    eval "$(nodenv init -)"
+fi
